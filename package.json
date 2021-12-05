@@ -7,7 +7,7 @@
 		"build": "rimraf dist && tsc",
 		"preserve": "yarn build",
 		"serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
-		"prestart": "yarn build",
+		"prestart": "npm run build",
 		"start": "cross-env NODE_ENV=production node dist/index.js"
 	},
 	"dependencies": {
